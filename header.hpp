@@ -18,6 +18,10 @@ extern "C" unsigned __int64 __readgsqword(unsigned long Offset);
 #define PEB_OFFSET 0x30
 #endif
 
+__forceinline VOID PrintState(char* cSyscallName, PVOID pSyscallAddress) {
+	printf("[#] %s [ 0x%p ] ---> %s \n", cSyscallName, pSyscallAddress, (*(ULONG*)pSyscallAddress != 0xb8d18b4c) == TRUE ? "[ HOOKED ]" : "[ UNHOOKED ]");
+}
+
 typedef struct _UNICODE_STRING {
     USHORT Length;
     USHORT MaximumLength;
