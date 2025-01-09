@@ -15,11 +15,11 @@
 Unhook is a base lib aiming to show different techniques to unhook NTDLL & use a proper version of it.
 
 > [!Note]
-> Consider using NTFUNCTIONS (Syscalls) for stealth. I only use base WinApi function for demo.
+> Consider using NTFUNCTIONS (Syscalls) for stealth. I only used base WinApi function for demo.
 
 ## Techniques : 
 
 - **Read from disk** : Read NTDLL from Disk.
-- **Map from disk** : Map NTDLL from Disk.
+- **Map from disk**  : Map NTDLL from Disk.
 - **Suspended process** : Retrieve NTDLL from a newly created process in SUSPENDED_MODE.
 
